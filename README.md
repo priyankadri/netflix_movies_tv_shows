@@ -1,6 +1,6 @@
 # netflix_movies_tv_shows
 
-#Project Summary
+# Project Summary
 
 Netflix is a popular streaming service that provides its subscribers with a wide range of movies, TV shows, documentaries, and original content to watch on demand. The company was founded in 1997 as a DVD rental service but later pivoted to an online streaming model in 2007. Since then, Netflix has grown into one of the most popular streaming services globally, with over 200 million subscribers in more than 190 countries as of 2021.
 
@@ -8,21 +8,21 @@ Netflix's success is due in part to its innovative business model and emphasis o
 
 This project aimed to identify patterns in the content available on the platform and group them into clusters based on similarities in their genres, sub-genres, release year, and other features. The project utilized machine learning algorithms such as K-means clustering and Hierarchical Clustering to cluster the data.
 
-#Methods used:
+# Methods used:
 Descriptive Statistics.
 
 Data Visualization.
 
 Machine Learning.
 
-#Libraries utilized:
+# Libraries utilized:
 NumPy and Pandas - For dataset cleaning and analysis.
 
 Matplotlib, Plotly and Seaborn - For Data Visualization.
 
 SkLearn and nltk - For machine learning and clustering.
 
-#Data Description
+# Data Description
 Show_id : Unique ID for every Movie / Tv Show
 
 Type : Identifier - A Movie or TV Show
@@ -47,7 +47,7 @@ Listed_in : Genres
 
 Description: The Summary description
 
-#Problem Statement
+# Problem Statement
 
 This dataset contains tv shows and movies available on Netflix as of 2019. The data is collected from Flixable which is a third-party Netflix search engine. In 2018, they released an interesting report which shows that the number of tv shows on Netflix has nearly tripled since 2010. The streaming service's number of movies has decreased by more than 2000 titles since 2010, while its number of tv shows has nearly tripled. It will be interesting to explore what all other insights can be obtained from the same dataset.
 
@@ -61,7 +61,7 @@ If Netflix has been increasingly focusing on TV rather than movies in recent yea
 
 Clustered similar content by matching text-based features.
 
-#EDA Summary:
+# EDA Summary:
 
 There are more movies (69.14%) than TV shows (30.86%) in the dataset.
 Raul Campos and Jan Suter together have directed 18 movies / TV shows, higher than anyone.
@@ -79,7 +79,7 @@ Dramas, comedies, and documentaries are the most popular genre for the movies on
 Raul Campos and Jan Suter have together directed in 18 movies, higher than anyone yet. This is followed by Marcus Roboy, Jay Karas, and Cathy Gracia-Molina. Alastair Fothergill has directed three TV shows, the most of any director. Only six directors have directed more than one television show.
 Samuel West has appeared in 10 movies, followed by Jeff Dunham with 7 movies. David Attenborough has appeared in 13 TV shows, followed by Michela Luci, Jamie Watson, Anna Claire Bartlam, Dante Zee, Eric Peterson with 4 TV shows.
 
-#Summary and Conclusion:
+# Summary and Conclusion:
 In this project, we tackled a text clustering issue where we had to categorize Netflix shows into specific clusters such that the shows within a cluster are similar to one another and the shows in different clusters are dissimilar to one another.
 
 Once our dataset is loaded, and then we search for duplicates and missing values. No duplicate values were discovered, and any missing values were used to fill them in. In our dataset, the director column contains the most missing entries, followed by cast, country, and date_added. The string "unknown" is used to fill missing values in the director and country columns, "no cast" is used fill in the cast column, and the mode value is used to fill missing values in the rating column. the records that had null entries in the "date_added" column were deleted.
